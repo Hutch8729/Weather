@@ -30,7 +30,7 @@ document.getElementById('tempType').addEventListener('click', function () {
 });
 
 $('#weather').click(function(){
-  var apiurl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=e6b16395e0d9e609c012595f72cef7a4"
+  var apiurl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=e6b16395e0d9e609c012595f72cef7a4"
   //$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=e6b16395e0d9e609c012595f72cef7a4", function(a){
       $.getJSON(apiurl, function(a){
         var farTemp = ((a.main.temp-273.15) * (9/5) + 32).toFixed();
