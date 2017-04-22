@@ -2,17 +2,24 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<title></title>
 </head>
-<body>
+<body class="body">
 	<button class="btn" type="button" id="clickMe" onclick="getLocation()">Loc</button>
 
 	<button class="btn" type="button" id="weather">Weather</button>
 	<p id="tester"></p>
 
 	<div id="tempType">
-		<p id="farenheit"></p>
-		<p id="celsius"></p>
+		<p id=locName></p>
+		<div id="tempHolder">
+			<p id="farenheit"></p>
+			<p id="celsius"></p>
+		</div>
+		<div id="iconHolder">
+			<img id=tempIcon src=""></img>
+		</div>
 	</div>
 
 

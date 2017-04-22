@@ -37,7 +37,34 @@ $('#weather').click(function(){
         $('#farenheit').text(farTemp + " F");
         var celTemp = (a.main.temp-273.15).toFixed(1);
         $('#celsius').text(celTemp + " C");
+        $('#tempIcon').attr('src', 'http://openweathermap.org/img/w/' + a.weather[0].icon + '.png');
+        $('#locName').text(a.name);
+        if(a.weather[0].id > 199 && a.weather[0].id < 300){
+          $(".body").css("background-color", "DimGray !important");
+        }
+        else if(a.weather[0].id > 299 && a.weather[0].id < 400){
+          $(".body").css("background-color", "DeepSkyBlue !important");
+        }
+        else if(a.weather[0].id > 499 && a.weather[0].id < 600){
+          $(".body").css("background-color", "SteelBlue !important");
+        }
+        else if(a.weather[0].id > 599 && a.weather[0].id < 700){
+          $(".body").css("background-color", "#e6e6e6 !important");
+        }
+        else if(a.weather[0].id > 799 && a.weather[0].id < 900){
+          console.log("fuck this shit");
+          $(".body").css("background-color", "#262626 !important");
+          if(a.dt > a.sys.sunrise && a.dt < a.sys.sunset){
+            console.log("maybe not?");
+            $(".body").css("background-color", "PaleGoldenRod !important");
+          }
+          else {
+            $(".body").css("background-color", "#262626 !important");
+          }
+        }
+
     		console.log(a);
+        console.log
       }
              )
 }
