@@ -6,19 +6,19 @@
 	<title></title>
 </head>
 <body class="body">
-	<button class="btn" type="button" id="clickMe" onclick="getLocation()">Loc</button>
+	<button class="btn" type="button" id="clickMe" onclick="showWeather()">Loc</button>
 
 	<button class="btn" type="button" id="weather">Weather</button>
 	<p id="tester"></p>
 
-	<div id="tempType">
-		<p id=locName></p>
-		<div id="tempHolder">
-			<p id="farenheit"></p>
-			<p id="celsius"></p>
-		</div>
-		<div id="iconHolder">
-			<img id=tempIcon src=""></img>
+	<div id="tempGroup" class="center-block col-md-4" style="float: none;">
+		<div id="tempType">
+			<h2 id=locName></h2>
+			<div class="container" style="float: none;">
+				<h2 id="farenheit"></h2>
+				<h2 id="celsius"></h2>
+				<img id=tempIcon src=""></img>
+			</div>
 		</div>
 	</div>
 

@@ -3,9 +3,24 @@
 }
 
 #tempType{
-	width:100px;
 	border:1px solid black;
 }
 
-.body{;
+.body{
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+    display: inline-block;
+    text-align: center;
+}
+
+#locName{
+	font-size: 18pt;
+	text-align: center;
 }
